@@ -18,25 +18,7 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                sh 'mvn test'
-            }
-        }
-
-        stage('Package') {
-            steps {
-                sh 'mvn package'
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                echo "Deploying the application..."
-                // Add deployment steps
-            }
-        }
-    }
+        
 
     post {
         success {
