@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven_3.8.1'  // Ensure this Maven version is configured in Jenkins
+        maven 'Maven_3.9.9'  // Ensure this Maven version is configured in Jenkins
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/user/repo.git'  // Change this to your Git repo
+                git 'https://github.com/kunalmali83/JavaProjectJenkin.git'  // Change this to your Git repo
             }
         }
 
